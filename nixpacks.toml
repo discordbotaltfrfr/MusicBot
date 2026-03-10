@@ -1,0 +1,8 @@
+# This file tells Railway to install FFmpeg natively on your deployment container
+# FFmpeg is strictly required for any Discord music bot to stream audio correctly.
+
+[phases.setup]
+aptPkgs = ["...", "ffmpeg"]
+
+[start]
+cmd = "npm start"
